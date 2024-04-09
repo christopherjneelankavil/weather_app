@@ -81,6 +81,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
               _weatherModel?.cityName ?? "Loading...",
               style: const TextStyle(
                 fontSize: 40,
+                fontWeight: FontWeight.bold,
               ),
             ),
             Lottie.asset(
@@ -90,6 +91,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
               '$displayTemperature°C',
               style: const TextStyle(
                 fontSize: 40,
+                fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 20,),
