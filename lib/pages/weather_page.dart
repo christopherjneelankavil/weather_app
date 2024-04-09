@@ -80,7 +80,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
             Text(
               _weatherModel?.cityName ?? "Loading...",
               style: const TextStyle(
-                fontSize: 28,
+                fontSize: 40,
               ),
             ),
             Lottie.asset(
@@ -89,9 +89,10 @@ class _WeatherScreenState extends State<WeatherScreen> {
             Text(
               '$displayTemperature°C',
               style: const TextStyle(
-                fontSize: 24,
+                fontSize: 40,
               ),
             ),
+            const SizedBox(height: 20,),
             Text(
               _weatherModel?.mainCondition ?? "",
               style: const TextStyle(
@@ -101,7 +102,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
             Text(
               _weatherModel?.description ?? "",
               style: const TextStyle(
-                fontSize: 28,
+                fontSize: 24,
               ),
             ),
             Padding(
@@ -116,13 +117,13 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         const Text(
                           'Feels like : ',
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 18,
                           ),
                         ),
                         Text(
                           findTemperatre(_weatherModel?.feelsLike),
                           style: const TextStyle(
-                            fontSize: 28,
+                            fontSize: 18,
                           ),
                         ),
                       ],
@@ -133,7 +134,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         const Text(
                           'Minimum temperature: ',
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 18,
                           ),
                         ),
                         Text(
@@ -141,7 +142,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                             _weatherModel?.minTemperature,
                           ),
                           style: const TextStyle(
-                            fontSize: 24,
+                            fontSize: 18,
                           ),
                         ),
                       ],
@@ -152,7 +153,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         const Text(
                           'Maximum temperature: ',
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 18,
                           ),
                         ),
                         Text(
@@ -160,7 +161,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                             _weatherModel?.maxTemperature,
                           ),
                           style: const TextStyle(
-                            fontSize: 24,
+                            fontSize: 18,
                           ),
                         ),
                       ],
